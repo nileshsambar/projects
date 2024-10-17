@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #navDiv {
+            padding: 5px;
+            width: 100%;
+            height: 35px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: mediumslateblue;
+            color: white;
+            position: fixed;
+            margin-bottom: 35px;
+        }
+        .icons {
+            width: 23px;
+        }
+        #navLinks {
+            display: flex;
+            justify-content: space-between;
+            font-size: larger;
+        }
+        #menuDiv {
+            margin: auto 20px auto 30px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navDiv">
+        <div style="font-family: cursive;font-size: x-large;">DaPPr</div>
+        <div id="navLinks">
+            <div style="display: inline-flex;justify-content: center;align-items: center;">
+
+                <a style="color: white; text-decoration: none; padding: 0px 20px;" href="#">Home</a>
+                <a style="color: white; text-decoration: none; padding: 0px 20px;" href="#">About Us</a>
+                <a style="color: white; text-decoration: none; padding: 0px 20px;" href="#">Information</a>
+                <div style="display: flex;align-items: center;margin-right: 20px;">More 
+                    <svg style="width: 15px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                      
+                </div>
+                <div style="display: inline-flex;justify-content: center;align-items: center;position: relative;" id="searchDiv">
+                    <input type="text" style="border-radius: 13px;border: 1px solid white;width: 200px;height: 20px;" name="search" id="search" placeholder="Search...">
+                    <svg style="position: absolute;right:3px;color: gray;box-sizing: border-box;padding: 3px;" class="icons" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                    
+                </div>
+            </div>
+            <div style="display: inline;" id="menuDiv">
+                <svg class="icons" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div id="header" style="
+            padding-top: 70px;
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;">
+            <div style="height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;">
+                <div style="width:30%;">
+                    <img style="
+                float: right;
+                height: 300px;
+                object-fit: cover;
+                width: 300px;
+                margin: 10px;
+                border-radius: 20px;" src="./imgs/pi.png" alt="coding vs">
+                </div>
+                <div style="border-radius: 10px; width: 50%; height: 290px;background-color: thistle;">
+                    <textarea  style="resize: none; background-color: transparent; width: 100%;height: 290px;border-radius: 10px;box-sizing: border-box;padding: 15px;" 
+                    placeholder="It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a....." 
+                    name="coding" id="coding"></textarea>
+                </div>
+            </div>
+
+            <div id="share" style="float: right; display: flex;flex-direction: column;position: sticky;top: 50px; right:0;">
+                <img src="./imgs/wa.png" alt="Whatsapp">
+                <img src="./imgs/fb.png" alt="Facebook">
+                <img src="./imgs/tw.png" alt="Twitter">
+            </div>
+    </div>
+
+    <style>
+        #gridDiv div {
+            margin-top: 35px;
+            border-radius: 8px; 
+            text-align: left;
+            color: white;
+            padding: 9px 30px 14px 9px;
+        }
+        #gridDiv div h5 {
+            margin: 10px 0px;
+        }
+        #gridDiv div span {
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <div id="gridDiv" style="display: flex;justify-content: space-evenly; align-items: center;">
+        <div style="background-color: rgb(106, 129, 240);">
+            <h5>Total Question's</h5>
+            <span>200,000</span>
+        </div>
+        <div style="background-color: rgb(98, 0, 219);">
+            <h5>Total Answer's</h5>
+            <span>105,000</span>
+        </div>
+        <div style="background-color: rgb(192, 44, 225);">
+            <h5>Participated</h5>
+            <span>10,000</span>
+        </div>
+        <div style="background-color:black;">
+            <h5>Total Passed</h5>
+            <span>6,000</span>
+        </div>
+        
+    </div>
+
+    <style>
+        #lastDiv {
+            margin-top: 50px;
+            border: solid;
+            margin: 30px 100px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(39, 39, 232);
+            color: white;
+            border-radius: 20px;
+        }
+        #routeDiv div {
+            margin: 10px;
+            border: 2px solid;
+            margin-right: 30px;
+            padding: 15px;
+            border-radius: 9px;
+            font-weight: bold;
+        }
+    </style>
+    <div id="lastDiv">
+        <div id="routeDiv" style="display: flex;flex-direction: column;">
+            <div style="background-color: lightblue; color: black">YOUR INFO</div>
+            <div >BOOKMARKS</div>
+            <div >SETTINGS</div>
+        </div>
+        <div style="border-radius: 10px; padding: 15px; color: black; background-color: white; flex-grow: 1;">
+            <div>
+                <div style="font-size: x-large;">Your information</div>
+                <p style="font-size: larger;">
+                    <b>Name : </b> Atul Singhal <br>
+                    <b>Email : </b> atul@gmail.com <br>
+                    <b>Phone : </b> +91 8131424888 <br>
+                    <b>Marks : </b> 500.00 <br>
+                </p>
+            </div>
+            <div style="margin: 10px; float: right;">
+                <button style="background-color: black;color: white; border-radius: 7px; padding: 8px 15px; font-size: large; display: flex; align-items: center;">
+                    Next
+                    <svg style="margin-left:5px; width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                      </svg>
+                      
+                      
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #share img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border: 2px solid black;
+            margin: 2px;
+        }
+    </style>
+    
+    <div id="cs" style="position: fixed;padding: 4px; border-radius: 20px; border: 3px solid; right: 30px;bottom: 5px;background-color: black;">
+        <img style="border: 2px solid black; border-radius: 15px; width: 40px; height: 40px;object-fit: cover;" src="./imgs/cs.png" alt="Customer Service">
+    </div>
+</body>
+</html>
